@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e9; /* Light beige background */
+    color: #4b3f34; /* Dark brown text */
+}
+
+header {
+    background-color: #8b5e34; /* Medium brown */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #704428; /* Darker brown */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation Bar */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8b5e34; /* Medium brown */
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #704428; /* Darker brown */
+}
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fffdf7; /* Off-white background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #8b5e34; /* Medium brown */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #c2a482; /* Light brown border */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #8b5e34; /* Medium brown on focus */
+    outline: none;
+    background-color: #fdf6ec; /* Subtle beige background */
+}
+
+.form-container button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #8b5e34; /* Medium brown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-container button:hover {
+    background-color: #704428; /* Darker brown */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #4b3f34; /* Dark brown */
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #8b5e34; /* Medium brown */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #704428; /* Darker brown */
+}
+
+/* Success and Error Messages */
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.message.success {
+    background-color: #d4cbb8; /* Pale beige */
+    color: #4b3f34; /* Dark brown text */
+    border: 1px solid #c2a482; /* Light brown border */
+}
+
+.message.error {
+    background-color: #f6e2dc; /* Light pinkish beige */
+    color: #8b3a2e; /* Reddish brown text */
+    border: 1px solid #d6b0a6; /* Light reddish brown border */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f0e6d8; /* Very light beige */
+    color: #6a5a4d; /* Subtle brown */
+    font-size: 0.9rem;
+    border-top: 1px solid #c2a482; /* Light brown */
+}
+
+footer p {
+    margin: 0;
+}

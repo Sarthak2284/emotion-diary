@@ -1,0 +1,146 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #FAF3E0; /* Soft cream background */
+    color: #3A2A1D; /* Deep brownish text */
+    line-height: 1.6;
+    font-size: 1.2em;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Styles */
+header {
+    background-color: #4B2C20; /* Rich dark brown */
+    color: #F1E6D6; /* Soft cream */
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: #F1E6D6;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #C89F63; /* Royal Gold */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #F1E6D6; /* Light cream */
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #D8B35C; /* Brighter gold */
+    color: #3A2A1D;
+    transform: scale(1.05);
+}
+
+/* Form Container Styles */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 100%;
+}
+
+.form-container h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4B2C20;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #D0C5B5; /* Subtle border */
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input[type="text"]:focus,
+.form-container textarea:focus {
+    border-color: #A67F46; /* Gold */
+    outline: none;
+}
+
+/* Create Journal Button Styles */
+.form-container button {
+    background-color: #4B2C20; /* Rich brown */
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #C89F63; /* Royal Gold */
+    transform: scale(1.05);
+}
+
+/* Error Message Styles */
+.message {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.message.error {
+    color: #FF0000; /* Red for error */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4B2C20; /* Rich brown */
+    color: #F1E6D6;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-family: 'Georgia', serif;
+}

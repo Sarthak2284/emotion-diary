@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <h1>Register for Emotion Diary</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/auth/login">Login</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="/auth/register" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <% if (query && query.error) { %>
+            <div class="message error">
+                <%= query.error %>
+            </div>
+        <% } %>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Emotion Diary. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

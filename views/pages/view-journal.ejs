@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Journal</title>
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <link rel="stylesheet" href="/styles/view-journal.css">
+
+</head>
+<body>
+    <header>
+        <h1>Journal: <%= journal.title %></h1>
+    </header>
+
+    <div class="journal-content">
+        <h3>Content:</h3>
+        <p><%= journal.content %></p>
+    </div>
+
+    <a href="/dashboard">Back to Dashboard</a>
+
+    <footer>
+        <p>&copy; 2024 Emotion Diary. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

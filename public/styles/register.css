@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6ec; /* Subtle beige */
+    color: #4b3f34; /* Dark brown text */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #8b5e34; /* Medium brown */
+    color: white;
+    margin-bottom: 20px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8b5e34; /* Medium brown */
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #704428; /* Darker brown */
+}
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fffdf7; /* Off-white background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.form-container h2 {
+    color: #8b5e34; /* Medium brown */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Form Styling */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.form-container input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #c2a482; /* Light brown border */
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #faf3e7; /* Light beige background */
+}
+
+.form-container input:focus {
+    border-color: #8b5e34; /* Medium brown on focus */
+    box-shadow: 0 0 8px rgba(139, 94, 52, 0.5); /* Glow effect */
+    outline: none;
+}
+
+.form-container button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #8b5e34; /* Medium brown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-container button:hover {
+    background-color: #704428; /* Darker brown */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Error Message */
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.message.error {
+    background-color: #f6e2dc; /* Light pinkish beige */
+    color: #8b3a2e; /* Reddish brown text */
+    border: 1px solid #d6b0a6; /* Light reddish brown border */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f0e6d8; /* Very light beige */
+    color: #6a5a4d; /* Subtle brown */
+    font-size: 0.9rem;
+    border-top: 1px solid #c2a482; /* Light brown */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,194 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #FAF3E0; /* Soft cream background */
+    color: #3A2A1D; /* Deep brownish text */
+    line-height: 1.6;
+    font-size: 1.2em;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Styles */
+header {
+    background-color: #4B2C20; /* Rich dark brown */
+    color: #F1E6D6; /* Soft cream */
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: #F1E6D6;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #C89F63; /* Royal Gold */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #F1E6D6; /* Light cream */
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #D8B35C; /* Brighter gold */
+    color: #3A2A1D;
+    transform: scale(1.05);
+}
+
+/* Journal List Styles */
+/* Container for journal list */
+.journal-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Flex container for cards */
+.journal-cards {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to the next line if necessary */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center-align cards */
+}
+
+/* Individual card styling */
+.journal-card {
+    width: 300px;
+    padding: 15px;
+    background-color: #fffdf7; /* Soft off-white background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.journal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.journal-card h2 {
+    color: #8b5e34; /* Medium brown */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Card Content */
+.journal-card p {
+    color: #4b3f34; /* Darker brown */
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* Actions Container */
+.journal-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Edit Button */
+.journal-actions .edit-btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #6a8b34; /* Olive green */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.journal-actions .edit-btn:hover {
+    background-color: #556c28; /* Darker olive */
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.journal-actions .delete-btn {
+    padding: 8px 12px;
+    background-color: #8b5e34; /* Medium brown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.journal-actions .delete-btn:hover {
+    background-color: #704428; /* Darker brown */
+    transform: scale(1.05);
+}
+/* Delete Button Styles */
+button {
+    background-color: #E94E77;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #D4375E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4B2C20; /* Rich brown */
+    color: #F1E6D6;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-family: 'Georgia', serif;
+}

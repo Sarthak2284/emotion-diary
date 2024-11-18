@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Journals</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/journal.css">
+</head>
+<body>
+    <header>
+        <h1>Your Journals</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/auth/logout">Logout</a>
+        <a href="/journal/new">Create New Journal</a>
+    </nav>
+
+    <div class="journal-list">
+        <% if (journals.length === 0) { %>
+            <p>No journals found. Start creating your first journal!</p>
+        <% } else { %>
+            <div class="journal-cards">
+                <% journals.forEach(journal => { %>
+                    <div class="journal-card">
+                        <h2><%= journal.title %></h2>
+                        <p><%= journal.content.substring(0, 100) %>...</p>
+                        <div class="journal-actions">
+                            <a href="/journal/edit/<%= journal._id %>" class="edit-btn">Edit</a>
+                            <form action="/journal/delete/<%= journal._id %>" method="POST">
+                                <button type="submit" class="delete-btn">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        <% } %>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Emotion Diary. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #FAF3E0; /* Soft cream background */
+    color: #3A2A1D; /* Deep brownish text */
+    line-height: 1.6;
+    font-size: 1.2em;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Styles */
+header {
+    background-color: #4B2C20; /* Rich dark brown */
+    color: #F1E6D6; /* Soft cream */
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: #F1E6D6;
+}
+
+/* Form Container Styles */
+form {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 100%;
+}
+
+form label {
+    font-size: 1.1em;
+    color: #4B2C20;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #D0C5B5; /* Subtle border */
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #A67F46; /* Gold */
+    outline: none;
+}
+
+form button {
+    background-color: #4B2C20; /* Rich brown */
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #C89F63; /* Royal Gold */
+    transform: scale(1.05);
+}
+
+/* Link Styles */
+a {
+    display: block;
+    text-align: center;
+    font-size: 1.1em;
+    color: #4B2C20;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #D8B35C; /* Brighter gold */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4B2C20; /* Rich brown */
+    color: #F1E6D6;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-family: 'Georgia', serif;
+}

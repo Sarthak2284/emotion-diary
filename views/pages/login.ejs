@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/auth.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <h1>Login to Emotion Diary</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/auth/register">Register</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Login</h2>
+        <form action="/auth/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <% if (query && query.error) { %>
+            <div class="message error">
+                <%= query.error %>
+            </div>
+        <% } %>
+        <% if (query && query.success) { %>
+            <div class="message success">
+                <%= query.success %>
+            </div>
+        <% } %>
+
+        <!-- Sign Up Link -->
+        <div class="signup-link">
+            <p>Don’t have an account? <a href="/auth/register">Sign Up</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Emotion Diary. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

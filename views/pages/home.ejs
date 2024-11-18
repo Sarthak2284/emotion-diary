@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Emotion Diary</h1>
+        <p>Your space to reflect, express, and grow.</p>
+    </header>
+
+    <div class="message-container">
+        <% if (query && query.success) { %>
+            <div class="message success">
+                <%= query.success %>
+            </div>
+        <% } %>
+    </div>
+
+    <main>
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <h2>What is Emotion Diary?</h2>
+            <p>
+                Emotion Diary is a secure, personal journaling platform designed to help you track your thoughts, emotions, and goals. 
+                Whether you're seeking clarity, personal growth, or just a place to record your daily musings, we're here to support you.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Why Use Emotion Diary?</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Secure Journals</h3>
+                    <p>Your entries are safe and accessible only to you.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Track Progress</h3>
+                    <p>Review your journey and personal growth over time.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Easy to Use</h3>
+                    <p>A clean, intuitive interface for effortless journaling.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="cta">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join Emotion Diary today and discover the power of reflection and self-expression.</p>
+            <div class="cta-buttons">
+                <a href="/auth/register" class="cta-button">Register</a>
+                <a href="/auth/login" class="cta-button secondary">Login</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Emotion Diary. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

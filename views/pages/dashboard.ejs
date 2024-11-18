@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/styles/common.css"> -->
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, <%= user.username %>!</h1>
+    <a href="/journal/new">Create New Journal</a>
+    <h2>Your Journals</h2>
+
+    <% if (journals.length === 0) { %>
+        <p>You haven't created any journals yet.</p>
+    <% } else { %>
+        <ul>
+            <% journals.forEach(journal => { %>
+                <li>
+                    <strong><%= journal.title %></strong> - <%= journal.dateCreated.toLocaleDateString() %>
+                    <!-- Link to view the journal content -->
+                    <a href="/journal/view/<%= journal._id %>">View</a>
+                    <a href="/journal/edit/<%= journal._id %>">Edit</a>
+                    <form action="/journal/delete/<%= journal._id %>" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </li>
+            <% }) %>
+        </ul>
+    <% } %>
+
+    <a href="/auth/logout">Logout</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Journal</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/new-journal.css">
+</head>
+<body>
+    <header>
+        <h1>Create New Journal</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/auth/logout">Logout</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>New Journal</h2>
+        <form action="/journal" method="POST">
+            <input type="text" name="title" placeholder="Journal Title" required>
+            <textarea name="content" placeholder="Write your journal here..." required></textarea>
+            <button type="submit">Create Journal</button>
+        </form>
+        
+        <% if (query && query.error) { %>
+            <div class="message error">
+                <%= query.error %>
+            </div>
+        <% } %>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Emotion Diary. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
