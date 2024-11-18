@@ -28,6 +28,7 @@
                         <h2><%= journal.title %></h2>
                         <p><%= journal.content.substring(0, 100) %>...</p>
                         <div class="journal-actions">
+                            <a href="/journal/view/<%= journal._id %>" class="view-btn">View</a>
                             <a href="/journal/edit/<%= journal._id %>" class="edit-btn">Edit</a>
                             <form action="/journal/delete/<%= journal._id %>" method="POST">
                                 <button type="submit" class="delete-btn">Delete</button>
