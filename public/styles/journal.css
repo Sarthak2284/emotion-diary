@@ -153,6 +153,30 @@ nav a:hover {
     transform: scale(1.05);
 }
 /* Delete Button Styles */
+
+
+.journal-actions .view-btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #3498db; /* Bright blue */
+    color: white;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.journal-actions .view-btn:hover {
+    background-color: #217dbb; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.journal-actions .view-btn:active {
+    background-color: #1c6fa1; /* Even darker blue */
+    transform: scale(0.98);
+}
 button {
     background-color: #E94E77;
     color: white;
