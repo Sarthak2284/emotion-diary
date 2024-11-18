@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const authRoutes = require('./routes/authRoutes');
 const journalRoutes = require('./routes/journalRoutes');
 const path = require('path');
-
+require('dotenv').config();
 const app = express();
 
 // Middleware to parse request bodies and handle sessions
@@ -36,6 +36,8 @@ mongoose.connect('mongodb://localhost/emotion-diary', { useNewUrlParser: true, u
   .catch((err) => console.log('Database connection error:', err));
 
 // Start the server
-app.listen(3000, () => {
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log('Server is running on http://localhost:3000');
 });
